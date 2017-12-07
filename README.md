@@ -39,3 +39,7 @@ $ docker run --rm luajit-dev
 ```
 
 * No readline in REPL
+
+## Nim
+
+See the [README](nim/README.md) in the `nim` folder
