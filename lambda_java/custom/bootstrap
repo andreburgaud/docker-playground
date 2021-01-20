@@ -1,16 +1,6 @@
 #!/bin/sh
 set -euo pipefail
 
-CP="."
-for i in $CP/*.jar
-do
-  if [ -f $i ] ; then
-    if [ -z $CP ] ; then
-      CP=$i
-    else
-      CP=$i:$CP
-    fi
-  fi
-done
+CP="$(ls -1 *.jar|tr '\n' ':')."
 
 exec /usr/bin/java -cp $CP com.amazonaws.services.lambda.runtime.api.client.AWSLambda $_HANDLER
