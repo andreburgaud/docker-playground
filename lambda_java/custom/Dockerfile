@@ -33,3 +33,6 @@ COPY --from=build /src/target/*.jar ./
 
 ENTRYPOINT ["entrypoint.sh"]
 CMD [ "example.App::sayHello" ]
+
+# To Debug
+# ENTRYPOINT ["sh"]
