@@ -33,3 +33,16 @@ After locally starting the container, test it with curl:
 $ curl "http://localhost:9000/2015-03-31/functions/function/invocations" -d '{}'
 "Hello λ!"
 ```
+
+## Makefile
+
+You can use make to execute the build, run, test and clean. For more information, run:
+
+```
+$ make
+```
+
+## License
+
+
+[MIT License](../../LICENSE.md)
