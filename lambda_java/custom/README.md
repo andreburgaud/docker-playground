@@ -4,7 +4,7 @@ This is a working example on how to create containerized AWS lambda image. This 
 
 I had to modify the AWS example to get it running.
 
-The AWS project code is released under Apache-2.0 License. This modified project is released under the MIT license like the other Docker projects in this repo.
+The original [AWS project](https://github.com/aws/aws-lambda-java-libs/tree/master/aws-lambda-java-runtime-interface-client) is released under Apache-2.0 License. This modified project is released under the [MIT license](../../LICENSE.md) like the other Docker projects in this repo.
 
 ## Differences
 
