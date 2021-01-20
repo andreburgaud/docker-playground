@@ -25,12 +25,16 @@ $ docker rmi $(docker images -f dangling=true -q)                  # Remove dang
 ## Lambda Go
 
 Examples to create containerized AWS lambda functions in Go.
-See README in the subdirectory for more details.
+See [README](lambda_go/README.md) in the subdirectory for more details.
 
 ## Lambda Java
 
 Example to create containerized AWS lambda functions in Java.
-See README in the subdirectory for more details.
+For more details, See the respective README files:
+
+* [Provided Image](lambda_java/provided/README.md)
+* [Custom Image](lambda_java/custom/README.md)
+
 
 ## Lua
 
