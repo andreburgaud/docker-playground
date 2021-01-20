@@ -1,5 +1,6 @@
 # Build stage
-FROM golang:1.15.6-alpine3.12 as build
+FROM golang:1.15.7-alpine3.13 as build
+
 
 RUN apk update && apk add --no-cache git
 RUN go env -w GOPROXY=direct
