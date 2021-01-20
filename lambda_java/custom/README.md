@@ -25,14 +25,22 @@ $ docker build -t java-ric .
 $ docker run --rm -p 9000:8080 java-ric
 ```
 
+To stop the process, type [Ctrl] + [c]
+
 ## Test
 
 After locally starting the container, test it with curl:
 
 ```
 $ curl "http://localhost:9000/2015-03-31/functions/function/invocations" -d '{}'
+```
+
+You should see the following sring on the terminal:
+
+```
 "Hello λ!"
 ```
+
 
 ## Makefile
 
