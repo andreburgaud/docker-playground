@@ -20,10 +20,10 @@ FROM azul/zulu-openjdk-alpine:15-jre
 RUN wget -O /usr/local/bin/aws-lambda-rie https://github.com/aws/aws-lambda-runtime-interface-emulator/releases/latest/download/aws-lambda-rie
 RUN chmod +x /usr/local/bin/aws-lambda-rie
 
-COPY entrypoint.sh /usr/local/bin/entrypoint.sh
-RUN chmod +x /usr/local/bin/entrypoint.sh
-
 WORKDIR /function
+
+COPY entrypoint.sh .
+RUN chmod +x entrypoint.sh
 
 COPY bootstrap .
 RUN chmod +x bootstrap
@@ -31,7 +31,7 @@ RUN chmod +x bootstrap
 COPY --from=build /src/target/dependency/*.jar ./
 COPY --from=build /src/target/*.jar ./
 
-ENTRYPOINT ["entrypoint.sh"]
+ENTRYPOINT ["/function/entrypoint.sh"]
 CMD [ "example.App::sayHello" ]
 
 # To Debug
