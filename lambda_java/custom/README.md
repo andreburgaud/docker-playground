@@ -11,7 +11,7 @@ The original [AWS project](https://github.com/aws/aws-lambda-java-libs/tree/mast
 As I could build but not run the original project as it was described in the [README](https://github.com/aws/aws-lambda-java-libs/blob/master/aws-lambda-java-runtime-interface-client/README.md), I slightly modified the generation of the image by:
 
 1. Integrating the Runtime Interface Emulator (RIE) in the image to help with local testing
-1. Added an entrypoint.sh and bootsrap files to control the execution of the lambda
+1. Added an `entrypoint.sh` and `bootsrap` files to control the execution of the lambda
 
 ## Build
 
