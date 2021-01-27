@@ -1,3 +1,3 @@
 .PHONY: build
 build:
-	docker build -t lambdajava11 .
+	DOCKER_BUILDKIT=1 docker build -t lambdajava11 .

@@ -2,7 +2,7 @@
 
 .PHONY: build
 build:
-	docker build -t java-ric .
+	DOCKER_BUILDKIT=1 docker build -t java-ric .
 
 run:
 	docker run --rm -p 9000:8080 java-ric

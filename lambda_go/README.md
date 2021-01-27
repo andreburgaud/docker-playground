@@ -12,7 +12,7 @@ You can build each image by running the following command in subdirectories cont
 a Docker file:
 
 ```
-$ docker build -t lambdago .
+$ DOCKER_BUILDKIT=1 docker build -t lambdago .
 ```
 
 * If you want to keep a docker image for each project, use a different name for each

@@ -5,7 +5,7 @@ Simple Docker image including the Nim compiler https://nim-lang.org/docs/nimc.ht
 # Build image
 
 ```
-$ docker build -t nim-dev .
+$ DOCKER_BUILDKIT=1 docker build -t nim-dev .
 ```
 
 Note that as of 12/6/2017, `nim` and `nimble` were still in the Alpine testing repository, thus requiring the following line prior to execute `apk add`:
